@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+        body {
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+
+        img {
+            width: 200px;
+            display: block;
+        }
+        p {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        button {
+            background: white;
+            color: black;
+            margin-top: 10px;
+            border: 1px solid black;
+            padding: 10px 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        #error {
+            color: red;
+            font-weight: 200;
+        }
+
+        </style>
+    </head>
+    <body>
+        <img id="started" src="images/PUSHME.jpg" onclick="B()" alt="Nike shoe">
+        <p id="Satisfaction" onclick="C()"></p>
+
+        <script>
+
+          function B(){
+            document.getElementById('Satisfaction').innerText = 'TOUCH ME'
+          }
+
+          function C(){
+            var img = document.getElementById('started');
+            img.src = "images/Satisfied.jpg"
+          }
+
+        </script>
+    </body>
+</html>
